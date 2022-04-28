@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "price": "99",
+        "description": "Residential plumbing can mean a lot of things - dealing with plumbing in the kitchen, bathroom, basement or outdoors. Starting with kitchen faucets and all the way down to a laundry or dishwashing machine, it all can break and leak one day. With fast, friendly service, my plumbing services can cover absolutely any piping or drainage, water supply issue that can possibly occur, either within your home or a commercial location!",
+        "image": "https://www.worryfreeplumbing.com/wp-content/uploads/2020/03/Plumbing-Services-2.jpg",
+        "name": "Plumbing Services"
+    },
+    {
+        "id": "2",
+        "price": "164",
+        "description": "I am experienced technicians, factory certified to ensure that I service, maintain, and repair all appliances quickly and efficiently. From washer and dryer repairs to stovetop and refrigerator repairs, I am affordable appliance repair services for your most valued home appliances. Likewise, My Customer Service is great and held to the highest standards to guarantee your complete satisfaction.",
+        "image": "https://appliancerepair-sd.com/wp-content/uploads/2021/05/Clues-That-Your-Refrigerator-Could-Use-Better-Maintenance.jpeg",
+        "name": "Refrigerator Repair Services"
+    },
+    {
+        "id": "3",
+        "price": "198",
+        "description": "I am the best microwave oven repair servicer near you. Microwaves are found in countless homes around the world. Making hot food rapidly and effectively available to you and your family. microwaves use microwave radiation, which energizes water, fat, and sugar particles into nuclear movement—otherwise called heat. At the point when this cycle is ruined by broken or harmed parts, it is the ideal opportunity for me to repair, you can trust.",
+        "image": "https://5.imimg.com/data5/CY/VE/MY-55491338/microwav-500x500.jpg",
+        "name": "Microwave Oven Services"
+    },
+    {
+        "id": "4",
+        "price": "173",
+        "description": "I Service All LCD TV with Warranty, I also Offer Home Delivery service. That means I pick your defected TV from your Home/Office and After Servicing delivery to your location",
+        "image": "https://content.jdmagicbox.com/comp/def_content/tv_repair_and_services/default-tv-repair-and-services-7.jpg",
+        "name": "TV Repair Services"
+    },
+    {
+        "id": "5",
+        "price": "450",
+        "description": "I can perform commercial and residential repair services in a timely manner. Flickering fluorescent lights, broken light switches, and old wiring are no match for lighting repair professionals. When your office can lights die, or when it is time to replace your home landscape lighting, you can trust me to tackle the job right the first time.",
+        "image": "https://i.ytimg.com/vi/Ng4GQxkz4j0/maxresdefault.jpg",
+        "name": "Light Repair Services "
+    },
+    {
+        "id": "6",
+        "price": "260",
+        "description": "I am home improvement professionals, skilled carpenters and furniture builders. I install and build fireplace mantels, cabinets, bookcases, wooden countertops and more.",
+        "image": "https://www.fixahome.com/wp-content/uploads/2020/06/Carpentry.jpg",
+        "name": "Carpentry Services"
+    }
+]
