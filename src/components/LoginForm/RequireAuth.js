@@ -10,7 +10,7 @@ import Loading from '../../Hooks/Loading';
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
-    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
     if (loading) {
         return <Loading></Loading>
     }
@@ -19,20 +19,20 @@ const RequireAuth = ({ children }) => {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
 
-    if (!user.emailVerified) {
+    if (!user.mailVerify && user.providerData[0]?.providerId === 'password') {
         return <div className='text-center'>
-            <h3 className='text-danger'>Your Email is not Verified!!</h3>
-            <h5 className='text-success'> Please Verify your E-Mail</h5>
+            <h3 className='text-danger'>Your Email isn't Verified!!</h3>
+            <h5 className='text-success'> Please Verify Mail !</h5>
             <br />
-            <br/>
+            <br />
             <button
                 className='btn btn-warning'
                 onClick={async () => {
                     await sendEmailVerification();
-                    toast('Verification Mail Sent! Cheak your Mailbox');
+                    toast('Verification Mail Sent!');
                 }}
             >
-                Send Verification E-Mail again
+                Send Verification Mail Again
             </button>
             <ToastContainer></ToastContainer>
         </div>

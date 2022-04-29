@@ -1,0 +1,8 @@
+.signup {
+    background-image: url("signup.jpg");
+    height: fit-content;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

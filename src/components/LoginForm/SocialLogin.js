@@ -10,14 +10,14 @@ const SocialLogin = () => {
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
     const navigate = useNavigate();
 
-    let errorDiv;
+    let customErrorMessage;
 
     if (loading || loading1) {
         return <Loading></Loading>
     }
 
     if (error || error1) {
-        errorDiv = <p className='text-danger text-center'>Error: {error?.message} {error1?.message}</p>
+        customErrorMessage = <p className='text-danger text-center'>Error: {error?.message} {error1?.message}</p>
     }
 
     if (user || user1) {
@@ -26,12 +26,7 @@ const SocialLogin = () => {
 
     return (
         <div>
-            {errorDiv}
-            <div className='container d-flex align-items-center'>
-                <div style={{ height: '1px' }} className='bg-black w-50'></div>
-                <p className='mt-2 px-2'>or</p>
-                <div style={{ height: '1px' }} className='bg-black w-50'></div>
-            </div>
+            {customErrorMessage}
 
             <div >
                 <button
@@ -42,7 +37,7 @@ const SocialLogin = () => {
                 </button>
                 <button
                     onClick={() => signInWithGithub()}
-                    className='btn btn-dark w-50 d-block mx-auto my-2'>
+                    className='btn btn-dark w-50 d-block mx-auto '>
 
                     <span className='px-2'>Github Sign In</span>
                 </button>
