@@ -8,13 +8,14 @@ import Banner2 from './BannerPic/2.jpg'
 import Banner3 from './BannerPic/3.jpg'
 import storeVaccine from './Extra/vaccine.jpg'
 import storeVaccine2 from './Extra/vaccine2.jpg'
+import HomeVaccine from '../Homevaccine/HomeVaccine';
 
 
 
 
 const Homepage = () => {
 
-  const [vaccine, setVaccine] = useVaccine()
+  const [vaccines, setVaccine] = useVaccine()
 
 
   return (
@@ -62,7 +63,25 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      <br />
+      <h1 className='text-center text-2xl font-serif underline text-stone-700'>My WearHouse Items</h1>
+      <br />
+      <section className="text-gray-700 bg-white body-font">
 
+        <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center '>
+          {vaccines.slice(0, 6).map(vaccine => <HomeVaccine
+            key={vaccines._id}
+            vaccine={vaccine}
+
+          />
+          )}
+        </div>
+      </section>
+
+      <br />
+      <Link to='/'><button className="btn btn-primary d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
+      </Link>
+      <br />
       <section className="text-gray-600 bg-white body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={storeVaccine2} />
@@ -72,16 +91,9 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-
-      <br />
-
-
-
-
-      <Link to='/'><button className="btn btn-primary d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
-      </Link>
       <br />
       <h1 className='text-center text-2xl font-serif underline text-stone-700'>Fequently Asked Question</h1>
+      <br />
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Drawing up and handling</Accordion.Header>

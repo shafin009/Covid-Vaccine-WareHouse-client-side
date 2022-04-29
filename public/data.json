@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "_id": "1",
         "price": "$ 8410",
         "quantity": "6103",
         "supplier": "BioNTech SE.",
@@ -9,7 +9,7 @@
         "name": "BioNTech, Pfizer vaccine"
     },
     {
-        "id": "2",
+        "_id": "2",
         "price": "$ 4710",
         "quantity": "6507",
         "supplier": "Sinovac Biotech Ltd.",
@@ -18,7 +18,7 @@
         "name": "Sinovac vaccine"
     },
     {
-        "id": "3",
+        "_id": "3",
         "price": "$ 1326",
         "quantity": "8074",
         "supplier": "Globe Biotech Limited.",
@@ -27,7 +27,7 @@
         "name": "Bangavax"
     },
     {
-        "id": "4",
+        "_id": "4",
         "price": "$ 3540",
         "quantity": "7209",
         "supplier": "Janssen Vaccines & Janssen Pharma.",
@@ -36,7 +36,7 @@
         "name": "Johnson & Johnson vaccine"
     },
     {
-        "id": "5",
+        "_id": "5",
         "price": "$ 6040",
         "quantity": "8020",
         "supplier": "Moderna, Inc.",
@@ -45,7 +45,7 @@
         "name": "Moderna vaccine"
     },
     {
-        "id": "6",
+        "_id": "6",
         "price": "$ 2560",
         "quantity": "8620",
         "supplier": "Oxford University and AstraZeneca.",
@@ -54,7 +54,7 @@
         "name": "Oxford, AstraZeneca vaccine"
     },
     {
-        "id": "7",
+        "_id": "7",
         "price": "$ 1000",
         "quantity": "7520",
         "supplier": "Beijing Bio-Institute.",
