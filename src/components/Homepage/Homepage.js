@@ -48,28 +48,31 @@ const Homepage = () => {
       </div>
       <br />
       <br />
-      <h1 className='text-center text-2xl font-serif underline text-stone-700'>Preparing for the Vaccine Rollout</h1>
-      <br />
-      <div className="container row row-cols-1 row-cols-md-2 g-4">
-        <div className="col">
-          <div className="card h-100">
-            <img src={storeVaccine} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title fw-bold">Some vaccines have to be stored at extremely low temperatures.</h5>
-              <p className="card-text">Toward the end of 2020, the world watched as COVID-19 vaccine developers made history, creating a silver lining that promises to end the coronavirus pandemic. Now, humanity turns its attention to the challenge of producing enough doses to vaccinate the population and safely delivering each precious jab into the arms of people everywhere. Effective vaccine distribution logistics will be key to success.The past year has reminded us how essential resilient emergency medical supply chains can be. After the first wave of COVID-19 infections revealed several problems in the supply of personal protective equipment (PPE), DHL  began focusing on the next logistics hurdle: rolling out the vaccine. </p>
-            </div>
+      <section className="text-gray-600 bg-white body-font">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Preparing for
+              <br className="hidden lg:inline-block" />The Vaccine Rollout
+            </h1>
+            <p className="mb-8 leading-relaxed">Toward the end of 2020, the world watched as COVID-19 vaccine developers made history, creating a silver lining that promises to end the coronavirus pandemic. Now, humanity turns its attention to the challenge of producing enough doses to vaccinate the population and safely delivering each precious jab into the arms of people everywhere. Effective vaccine distribution logistics will be key to success.The past year has reminded us how essential resilient emergency medical supply chains can be. After the first wave of COVID-19 infections revealed several problems in the supply of personal protective equipment (PPE), DHL  began focusing on the next logistics hurdle: rolling out the vaccine.</p>
+
+          </div>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img className="object-cover object-center rounded" alt="hero" src={storeVaccine} />
           </div>
         </div>
-        <div className="col">
-          <div className="card h-100">
-            <img src={storeVaccine2} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title fw-bold">Storage and distribution at -70 degrees Celsius present a challenge.</h5>
-              <p className="card-text">At the time, we determined that inbound logistics, temperature requirements, and vaccine distribution would pose the most significant challenges.  The PPE supply shortages in early 2020 demonstrated the limitations of geographically concentrated production. With four of the six vaccine frontrunners based on new or even experimental platforms, we projected varying and, in some cases, very stringent temperature requirements starting as low as -80°C. We also estimated needing up to 200,000 pallet shipments, 15 million cooling boxes, and 15,000 flights across the various supply chain setups to provide global coverage of the anticipated 10 billion doses needed worldwide.</p>
-            </div>
+      </section>
+
+      <section className="text-gray-600 bg-white body-font">
+        <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={storeVaccine2} />
+          <div className="text-center lg:w-2/3 w-full">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Storage and distribution at -70 degrees Celsius present a challenge.</h1>
+            <p className="leading-relaxed mb-8">At the time, we determined that inbound logistics, temperature requirements, and vaccine distribution would pose the most significant challenges.  The PPE supply shortages in early 2020 demonstrated the limitations of geographically concentrated production. With four of the six vaccine frontrunners based on new or even experimental platforms, we projected varying and, in some cases, very stringent temperature requirements starting as low as -80°C. We also estimated needing up to 200,000 pallet shipments, 15 million cooling boxes, and 15,000 flights across the various supply chain setups to provide global coverage of the anticipated 10 billion doses needed worldwide.</p>
           </div>
         </div>
-      </div>
+      </section>
+
       <br />
 
 
