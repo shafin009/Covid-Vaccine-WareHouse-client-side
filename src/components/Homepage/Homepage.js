@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import { Carousel, Accordion, Card } from 'react-bootstrap';
+import { Carousel, Accordion } from 'react-bootstrap';
 import useVaccine from '../../Hooks/useVaccine'
 import Banner1 from './BannerPic/1.jpg'
 import Banner2 from './BannerPic/2.jpg'
