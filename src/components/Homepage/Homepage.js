@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import { Carousel, Accordion } from 'react-bootstrap';
+import { Carousel, Accordion, Card } from 'react-bootstrap';
 import useVaccine from '../../Hooks/useVaccine'
 import Banner1 from './BannerPic/1.jpg'
 import Banner2 from './BannerPic/2.jpg'
 import Banner3 from './BannerPic/3.jpg'
+import storeVaccine from './Extra/vaccine.jpg'
+import storeVaccine2 from './Extra/vaccine2.jpg'
 
 
 
@@ -46,13 +48,37 @@ const Homepage = () => {
       </div>
       <br />
       <br />
-      <h1 className='text-center text-4xl font-serif underline text-stone-700'>Our Items</h1>
+      <h1 className='text-center text-2xl font-serif underline text-stone-700'>Preparing for the Vaccine Rollout</h1>
+      <br />
+      <div className="container row row-cols-1 row-cols-md-2 g-4">
+        <div className="col">
+          <div className="card h-100">
+            <img src={storeVaccine} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title fw-bold">Some vaccines have to be stored at extremely low temperatures.</h5>
+              <p className="card-text">Toward the end of 2020, the world watched as COVID-19 vaccine developers made history, creating a silver lining that promises to end the coronavirus pandemic. Now, humanity turns its attention to the challenge of producing enough doses to vaccinate the population and safely delivering each precious jab into the arms of people everywhere. Effective vaccine distribution logistics will be key to success.The past year has reminded us how essential resilient emergency medical supply chains can be. After the first wave of COVID-19 infections revealed several problems in the supply of personal protective equipment (PPE), DHL  began focusing on the next logistics hurdle: rolling out the vaccine. </p>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card h-100">
+            <img src={storeVaccine2} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title fw-bold">Storage and distribution at -70 degrees Celsius present a challenge.</h5>
+              <p className="card-text">At the time, we determined that inbound logistics, temperature requirements, and vaccine distribution would pose the most significant challenges.  The PPE supply shortages in early 2020 demonstrated the limitations of geographically concentrated production. With four of the six vaccine frontrunners based on new or even experimental platforms, we projected varying and, in some cases, very stringent temperature requirements starting as low as -80°C. We also estimated needing up to 200,000 pallet shipments, 15 million cooling boxes, and 15,000 flights across the various supply chain setups to provide global coverage of the anticipated 10 billion doses needed worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
 
 
 
       <Link to='/'><button className="btn btn-primary d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
       </Link>
       <br />
+      <h1 className='text-center text-2xl font-serif underline text-stone-700'>Fequently Asked Question</h1>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Drawing up and handling</Accordion.Header>

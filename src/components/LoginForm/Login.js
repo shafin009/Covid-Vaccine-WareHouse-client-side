@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 import Loading from '../../Hooks/Loading';
@@ -105,7 +105,7 @@ const Login = () => {
                 </div>
             </div>
             <SocialLogin></SocialLogin>
-            <ToastContainer />
+
 
         </div>
     );
