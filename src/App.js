@@ -9,6 +9,7 @@ import Login from './components/LoginForm/Login';
 import SignUp from './components/LoginForm/SignUp';
 import Blogs from './components/Blogs/Blogs';
 import Vaccine from './components/Vaccine/Vaccine';
+import Inventory from './components/Vaccine/Inventory';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/home" element={<Homepage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/inventory' element={<Vaccine />} />
+        <Route path='/inventory/:id' element={<Inventory />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
