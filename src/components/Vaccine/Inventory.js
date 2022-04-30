@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Form } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom'
 
 
@@ -31,6 +32,23 @@ const Inventory = () => {
                     </div>
                 </div>
             </section>
+            <button class="flex mx-auto text-white bg-red-800 border-0 py-2 px-8 focus:outline-none rounded text-lg">Deliver Item</button>
+            <br />
+            <div className='container w-50 mx-auto'>
+                <Form>
+                    <Form.Group className="mb-3 text-center" controlId="formBasicEmail">
+                        <Form.Label>Increase Item From</Form.Label>
+                        <Form.Control type="email" placeholder="Item Name" disabled />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3 text-center" controlId="formBasicPassword">
+                        <Form.Label >Quantity</Form.Label>
+                        <Form.Control type="number" placeholder="Quantity" required />
+                    </Form.Group>
+                    <button class="flex mx-auto text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Restock Item</button>
+                </Form>
+            </div>
+            <br />
             <Link to='/manageinventory'><button className="btn btn-success d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
             </Link>
         </div>
