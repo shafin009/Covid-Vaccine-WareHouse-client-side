@@ -79,7 +79,7 @@ const Homepage = () => {
       </section>
 
       <br />
-      <Link to='/'><button className="btn btn-primary d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
+      <Link to='/manageinventory'><button className="btn btn-primary d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
       </Link>
       <br />
       <section className="text-gray-600 bg-white body-font">
