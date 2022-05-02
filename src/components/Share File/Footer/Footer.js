@@ -7,51 +7,58 @@ const Footer = () => {
 
 
   return (
-    <footer className='body bg-cyan-700 w-full py-8 mt-8'>
-      <div className='max-w-screen-xl mx-auto px-4'>
-        <div className=' flex max-w-xs mx-auto items-center justify-evenly '>
-          <a target="_blank"
-            href='https://www.facebook.com/Infinity.shafin.1999'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
-          >
-            <svg
-              width='20'
-              height='20'
-              fill='currentColor'
-              className='text-xl hover:text-gray-800 transition-colors duration-200'
-              viewBox='0 0 1792 1792'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path d='M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z'></path>
-            </svg>
-          </a>
-
-          <a target="_blank"
-            href='https://github.com/shafin009'
-            className='text-gray-400 hover:text-gray-800 transition-colors duration-200'
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='20'
-              height='20'
-              fill='currentColor'
-              className='text-xl hover:text-gray-800 transition-colors duration-200'
-              viewBox='0 0 1792 1792'
-            >
-              <path d='M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z'></path>
-            </svg>
-          </a>
-
+    <div>
+      <br />
+      <footer className="text-gray-400 bg-gray-900 body-font">
+        <div className="border-t border-gray-800">
+          <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
+            <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+              <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                <label for="footer-field" className="leading-7 text-sm text-gray-400">Want's to Know More ?</label>
+                <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Contact Me</button>
+              <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">All Rights Reserved
+                <br className="lg:block hidden" />
+                <p>24/7 Support</p>
+              </p>
+            </div>
+            <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <a className="text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a className="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a className="ml-3 text-gray-400">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a className="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
-        <div className='text-center text-white pt-10 sm:pt-12 font-light flex items-center justify-center'>
-          Terms and Conditions || Privacy Policy || Complaint
+        <div className="bg-gray-800 bg-opacity-75">
+          <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p className="text-gray-400 text-sm text-center sm:text-left">© {year} SHAFIN WEARHOUSE—
+              <a href="https://www.facebook.com/Infinity.shafin.1999" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@See More</a>
+            </p>
+            <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-400 text-sm">Terms and Conditions || Privacy Policy || Complaint</span>
+          </div>
         </div>
-        <div className='text-center text-white pt-10 sm:pt-12 font-light flex items-center justify-center'>
-          All Rights Reserved By &copy; Covid Vaccine WearHouse || {year}
-        </div>
-
-      </div>
-    </footer>
+      </footer >
+    </div >
   )
 }
 

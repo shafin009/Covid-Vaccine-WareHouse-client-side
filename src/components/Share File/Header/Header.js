@@ -30,16 +30,17 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="inventory">Inventory</Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
+                            <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
+                            {
+                                user && <>
+
+                                    <Nav.Link as={Link} to="manageitem">Manage Item</Nav.Link>
+                                    <Nav.Link as={Link} to="myitem">My Item</Nav.Link>
+
+                                </>
+                            }
                             {
                                 user ?
                                     <button onClick={() => handleSignOut()} className='btn btn-link text-white text-decoration-none'>Logout</button>

@@ -30,19 +30,25 @@ const AddNewItem = () => {
             });
     };
     return (
-        <div className="w-50 mx-auto">
+        <>
             <br />
-            <h1>Add Item</h1>
+            <h1 className='text-center fw-2'>Add Item</h1>
+
             <br />
-            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-3' placeholder='Item Name' {...register("name", { required: true, maxLength: 20 })} />
-                <input className='mb-3' placeholder='Description' {...register("description")} />
-                <input className='mb-3' placeholder='Quantity' type="number" {...register("quantity")} />
-                <input className='mb-3' placeholder='Image URL' type="text" {...register("image")} />
-                <br />
-                <input type='submit' value="Add Service" />
-            </form>
-        </div>
+            <div className="w-50 mx-auto">
+                <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+                    <input className='mb-3' value={user?.email} {...register("user")} readOnly disabled />
+                    <input className='mb-3' placeholder='Item Name' {...register("name", { required: true, maxLength: 20 })} />
+                    <input className='mb-3' placeholder='Description' {...register("description")} />
+                    <input className='mb-3' placeholder='Quantity' type="number" {...register("quantity")} />
+                    <input className='mb-3' placeholder='Image URL' type="text" {...register("image")} />
+                    <br />
+                    <div className="flex justify-center">
+                        <button className="bg-sky-700 w-full py-2">Add Item</button>
+                    </div>
+                </form>
+            </div>
+        </>
     );
 };
 

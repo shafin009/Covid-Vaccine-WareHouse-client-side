@@ -12,6 +12,8 @@ import Vaccine from './components/Vaccine/Vaccine';
 import Inventory from './components/Vaccine/Inventory';
 import ManageInventory from './components/Vaccine/ManageInventory'
 import AddNewItem from './components/Vaccine/AddNewItem';
+import ManageItem from './components/HeaderUserLogin/ManageItem';
+import MyItem from './components/HeaderUserLogin/MyItem';
 
 
 
@@ -29,6 +31,8 @@ function App() {
         <Route path='/inventory' element={<Vaccine />} />
         <Route path='/manageinventory' element={<ManageInventory></ManageInventory>} />
         <Route path='/inventory/:id' element={<Inventory />} />
+        <Route path='/manageitem' element={<ManageItem />} />
+        <Route path='/myitem' element={<MyItem />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/addnewitem' element={<AddNewItem />} />
         <Route path='/blogs' element={<Blogs />} />
