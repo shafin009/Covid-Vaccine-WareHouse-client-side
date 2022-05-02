@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Managedetails = ({ vaccine }) => {
+
+
+
+    
     return (
         <div>
             <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">

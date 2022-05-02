@@ -22,6 +22,8 @@ const Vaccine = () => {
                     )}
                 </div>
             </section>
+            <br />
+
         </div>
     );
 };

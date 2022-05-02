@@ -1,18 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom'
+import useVaccineid from '../../Hooks/useVaccineid';
 
 
 
 const Inventory = () => {
-    const [vaccine, setVaccine] = useState({});
-    const { _id } = useParams()
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/inventory/${_id}`)
-            .then(res => res.json())
-            .then(data => setVaccine(data))
-    }, [_id])
+    const { id } = useParams()
+    const [vaccine] = useVaccineid(id);
+    const [count, setCount] = useState(35);
+    const [qty, setQty] = useState(1);
+    if (count < 1) {
+        setCount(0);
+    }
+    const restockButton = () => {
+        const quantity = qty;
+        const addedQty = parseInt(quantity) + count;
+        setCount(addedQty);
+    };
+
 
     return (
         <div>
@@ -26,28 +33,24 @@ const Inventory = () => {
                             <h1 className="title-font text-lg font-medium text-gray-600 mb-3">Supplier:{vaccine.supplier}</h1>
                             <p className="leading-relaxed mb-3">Description: {vaccine.description}</p>
                             <h3 className="title-font text-lg font-medium text-gray-600 mb-3">Price: {vaccine.price}</h3>
-                            <h3 className="title-font text-lg font-medium text-gray-600 mb-3">Quantity: {vaccine.quantity}</h3>
+                            <h3 className="title-font text-lg font-medium text-gray-600 mb-3">Quantity: {count} </h3>
                             <button class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Update</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <button class="flex mx-auto text-white bg-red-800 border-0 py-2 px-8 focus:outline-none rounded text-lg">Deliver Item</button>
+            <button onClick={() => setCount(count - 1)} class="flex mx-auto text-white bg-red-800 border-0 py-2 px-8 focus:outline-none rounded text-lg">Deliver Item</button>
             <br />
             <div className='container w-50 mx-auto'>
                 <Form>
-                    <Form.Group className="mb-3 text-center" controlId="formBasicEmail">
-                        <Form.Label>Increase Item From</Form.Label>
-                        <Form.Control type="email" placeholder="Item Name" disabled />
-                    </Form.Group>
-
                     <Form.Group className="mb-3 text-center" controlId="formBasicPassword">
-                        <Form.Label >Quantity</Form.Label>
-                        <Form.Control type="number" placeholder="Quantity" required />
+                        <Form.Label >Restock Quantity</Form.Label>
+                        <Form.Control type="number" onBlur={(event) => setQty(event.target.value)} placeholder="Quantity" required />
                     </Form.Group>
-                    <button class="flex mx-auto text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Restock Item</button>
+                    <button onClick={() => restockButton()} class="flex mx-auto text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Restock Item</button>
                 </Form>
             </div>
+            <br />
             <br />
             <Link to='/manageinventory'><button className="btn btn-success d-grid gap-2 col-6 mx-auto" >Manage Inventory</button>
             </Link>
