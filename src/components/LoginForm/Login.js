@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 import Loading from '../../Hooks/Loading';
 import './login.css'
+import axios from 'axios';
 
 
 
@@ -36,19 +37,22 @@ const Login = () => {
     }
 
     if (user) {
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
     }
 
     if (error) {
         errorMessageShow = <p className='text-danger text-center'>Error: {error?.message}</p>
     }
 
-    const formSubmit = event => {
+    const formSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('http://localhost:5000/login', { email });
+        localStorage.setItem('Token Access', data.tokenAccess);
+        navigate(from, { replace: true });
+       
     }
 
     const passwordReset = async () => {
