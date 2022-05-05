@@ -10,6 +10,7 @@ const MyItem = () => {
     useEffect(() => {
         const itemsEmail = async () => {
             const email = user?.email;
+            console.log(email)
             const url = `http://localhost:5000/myitem?email=${email}`;
             const { data } = await axios.get(url, {
                 headers: {
@@ -17,6 +18,7 @@ const MyItem = () => {
                 }
             });
             setVaccine(data);
+            console.log(data)
         };
         itemsEmail();
     }, [user?.email]);
@@ -64,7 +66,7 @@ const MyItem = () => {
                                 <h3 className="title-font text-lg font-medium text-gray-600 mb-3">Quantity: {vaccine.quantity}</h3>
 
 
-                                <button onClick={() => deleteButton(vaccine._id)} class="flex mx-auto text-black bg-red-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Delete</button>
+                                <button onClick={() => deleteButton(vaccine._id)} class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Delete</button>
 
                             </div>
                         </div>

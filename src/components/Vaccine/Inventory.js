@@ -43,6 +43,8 @@ const Inventory = () => {
 
     const numberOne = parseInt(stock.quantity);
     const numberRef = useRef('');
+
+
     const addStockItem = event => {
         event.preventDefault();
         const stocknumber = numberRef.current.value;
@@ -91,7 +93,7 @@ const Inventory = () => {
                             </span>
                             <div className="flex mb-4">
                                 <h2
-                                    className="text-xl text-sky-600 font-semibold"
+                                    className="text-xl font-semibold"
                                     name="number"
                                 >
                                     Quantity : {stock.quantity}
@@ -102,20 +104,21 @@ const Inventory = () => {
                                     onClick={deliverButton}
                                     className="flex text-white bg-red-500 border-0 py-1 px-3 h-8 rounded"
                                 >
-                                    Deliver
+                                    Deliver Item
                                 </button>
                                 <form onSubmit={addStockItem}>
                                     <input
                                         ref={numberRef}
                                         type="number"
+                                        min="0"
                                         name="quantity"
-                                        className="border-2 text-center mx-3 h-8 rounded w-12"
+                                        className="border-2 text-center mx-3 h-8 rounded w-17"
                                         placeholder="Quantity"
                                     />
                                     <input
                                         className="flex mx-3 text-black bg-green-500 border-0 py-1 px-3 h-8 mt-5 focus:outline-none rounded"
                                         type="submit"
-                                        value="Add"
+                                        value="Add Item"
                                     />
                                 </form>
                             </div>

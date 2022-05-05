@@ -23,7 +23,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <h2 className='font-sans font-bold text-xl text-cyan-100'>Covid Vaccine WearHouse</h2>
+                        <h2 className='font-sans font-bold text-xl text-cyan-100'>Covid Vaccine WareHouse</h2>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

@@ -1,65 +1,92 @@
 [
     {
-        "_id": "1",
         "price": "$ 8410",
         "quantity": "6103",
         "supplier": "BioNTech SE.",
         "description": "The Pfizer-BioNTech vaccine sold under the brand name Comirnaty is an mRNA-based COVID 19 vaccine developed by the German biotechnology company BioNTech. For its development, BioNTech collaborated with American company Pfizer to carry out clinical trials, logistics, and manufacturing. It is authorized for use in people aged five years and older in some jurisdictions, twelve years and older in some jurisdictions, and for people sixteen years and older in other jurisdictions to provide protection against COVID-19,",
         "image": "https://gdb.voanews.com/C5E80664-4A9B-41ED-BEF5-6C97B953B584_w1080_h608.jpg",
-        "name": "BioNTech, Pfizer vaccine"
+        "name": "BioNTech, Pfizer vaccine",
+        "email": "shanikafin@gmail.com"
     },
     {
-        "_id": "2",
         "price": "$ 4710",
         "quantity": "6507",
         "supplier": "Sinovac Biotech Ltd.",
         "description": "CoronaVac, also known as the Sinovac vaccine, is an whole inactivated virus COVID 19 vaccine developed by the Chinese company Sinovac Biotech. It was Phase III clinical trialled in Brazil, Chile, Indonesia,the Philippines, and Turkey and relies on traditional technology similar to other inactivated-virus COVID 19 vaccines.",
         "image": "https://news.cgtn.com/news/2021-10-28/Colombia-receives-new-supply-of-Sinovac-COVID-19-vaccines-14IO12ionw4/img/1662c1633cc440eaaf882b3a5cf162f0/1662c1633cc440eaaf882b3a5cf162f0.jpeg",
-        "name": "Sinovac vaccine"
+        "name": "Sinovac vaccine",
+        "email": "shanikafin@gmail.com"
     },
     {
-        "_id": "3",
         "price": "$ 1326",
         "quantity": "8074",
         "supplier": "Globe Biotech Limited.",
         "description": "Bangavax, also known as Bancovid, is a COVID-19 vaccine candidate developed by a Bangladeshi pharmaceutical company Globe Biotech Limited.The vaccine was initially called Bancovid On 23 November 2021, Globe Biotech has received ethical authorization from the Bangladesh Medical Research Council to conduct the first human trial.",
         "image": "https://thefinancialexpress.com.bd/uploads/1637672357.jpg",
-        "name": "Bangavax"
+        "name": "Bangavax",
+        "email": "shanikafin@gmail.com"
     },
     {
-        "_id": "4",
         "price": "$ 3540",
         "quantity": "7209",
         "supplier": "Janssen Vaccines & Janssen Pharma.",
         "description": "The Janssen vaccine, or Johnson & Johnson COVID 19 vaccine, is a COVID-19 vaccine that was developed by Janssen Vaccines in Leiden, Netherlands and its Belgian parent company Janssen Pharmaceuticals a subsidiary of American company Johnson & Johnson. It is a viral vector vaccine based on a human adenovirus that has been modified to contain the gene for making the spike protein of the SARS-CoV-2 virus that causes COVID-19.",
         "image": "https://static.dw.com/image/57149864_101.jpg",
-        "name": "Johnson & Johnson vaccine"
+        "name": "Johnson & Johnson vaccine",
+        "email": "shanikafin@gmail.com"
     },
     {
-        "_id": "5",
         "price": "$ 6040",
         "quantity": "8020",
         "supplier": "Moderna, Inc.",
         "description": "The Moderna vaccine sold under the brand name Spikevax, is a COVID-19 vaccine developed by American company Moderna, the United States National Institute of Allergy and Infectious Diseases (NIAID), and the Biomedical Advanced Research and Development Authority (BARDA). It is authorized for use in people aged twelve years and older in some jurisdictions and for people eighteen years and older in other jurisdictions to provide protection against COVID-19.",
         "image": "https://www.deccanherald.com/sites/dh/files/articleimages/2022/04/28/moderna-vaccine-reuters-1104822-1651165411.jpg",
-        "name": "Moderna vaccine"
+        "name": "Moderna vaccine",
+        "email": "shanikafin@gmail.com"
     },
     {
-        "_id": "6",
         "price": "$ 2560",
         "quantity": "8620",
         "supplier": "Oxford University and AstraZeneca.",
         "description": "The Oxford AstraZeneca COVID-19 vaccine, codenamed AZD1222 and sold under the brand names Covishield and Vaxzevria among others, is a viral vector vaccine for prevention of COVID-19. Developed in the United Kingdom by the Oxford University and British-Swedish company AstraZeneca using as a vector the modified chimpanzee adenovirus ChAdOx1.",
         "image": "https://static.toiimg.com/thumb/msid-82028885,width-1200,height-900,resizemode-4/.jpg",
-        "name": "Oxford, AstraZeneca vaccine"
+        "name": "Oxford, AstraZeneca vaccine",
+        "email": "shanikafin@gmail.com"
     },
     {
-        "_id": "7",
         "price": "$ 1000",
         "quantity": "7520",
         "supplier": "Beijing Bio-Institute.",
         "description": "The Sinopharm BIBP COVID-19 vaccine is one of two whole inactivated virus COVID-19 vaccines developed by Sinopharm's Beijing Institute of Biological Products (sometimes written as Beijing Bio-Institute of Biological Products, resulting in the two different acronyms BBIBP and BIBP for the same vaccine)",
         "image": "https://static.bangkokpost.com/media/content/20220416/c1_2295714.jpeg",
-        "name": "Sinopharm BBIBP vaccine"
+        "name": "Sinopharm BBIBP vaccine",
+        "email": "shanikafin@gmail.com"
+    },
+    {
+        "price": "$ 5308",
+        "quantity": "4241",
+        "supplier": "Coalition for Epidemic Preparedness Innovations.",
+        "description": "The Novavax COVID-19 vaccine, sold under the brand names Nuvaxovid and Covovax,among others, is a subunit COVID-19 vaccine developed by Novavax and the Coalition for Epidemic Preparedness Innovations (CEPI).Full results from Nuvaxovid's pivotal phase III trial were published in December 2021",
+        "image": "https://www1.racgp.org.au/getattachment/38b352fd-bfa2-4c17-a269-7db50467104a/Novavax-given-limited-approval-as-booster.aspx",
+        "name": "Novavax COVID-19 vaccine",
+        "email": "shanikafin@gmail.com"
+    },
+    {
+        "price": "$ 6258",
+        "quantity": "7485",
+        "supplier": "Bharat Biotech International Limited.",
+        "description": "Covaxin (codenamed as BBV152) is an whole inactivated virus-based COVID-19 vaccine developed by Bharat Biotech in collaboration with the Indian Council of Medical Research - National Institute of Virology",
+        "image": "https://images.news18.com/ibnlive/uploads/2021/01/1609592779_covaxin.jpg?im=FitAndFill,width=1200,height=900",
+        "name": "Covaxin",
+        "email": "shanikafin@gmail.com"
+    },
+    {
+        "price": "$ 3854",
+        "quantity": "8540",
+        "supplier": "Gamaleya Research Institute of Epidemiology and Microbiology.",
+        "description": "Sputnik V or Gam-COVID-Vac is an adenovirus viral vector vaccine for COVID-19 developed by the Gamaleya Research Institute of Epidemiology and Microbiology in Russia. It is the world's first registered combination vector vaccine for the prevention of COVID-19, having been registered on 11 August 2020 by the Russian Ministry of Health.",
+        "image": "https://static.dw.com/image/57143788_303.jpg",
+        "name": "Sputnik V",
+        "email": "shanikafin@gmail.com"
     }
 ]
