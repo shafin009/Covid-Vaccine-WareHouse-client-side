@@ -2,23 +2,36 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { useNavigate } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+
 
 const MyItem = () => {
     const [user] = useAuthState(auth);
     const [vaccines, setVaccine] = useState([]);
+    const Navigate = useNavigate()
 
     useEffect(() => {
         const itemsEmail = async () => {
             const email = user?.email;
             console.log(email)
             const url = `http://localhost:5000/myitem?email=${email}`;
-            const { data } = await axios.get(url, {
-                headers: {
-                    authorization: `Bearer ${localStorage.getItem('Token Access')}`
+            try {
+                const { data } = await axios.get(url, {
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem('Token Access')}`
+                    }
+                });
+                setVaccine(data);
+            }
+            catch (error) {
+                console.log(error)
+                if (error.response.status === 403 || error.response.status === 401) {
+                    Navigate('/login');
+                    signOut(auth);
                 }
-            });
-            setVaccine(data);
-            console.log(data)
+            }
+
         };
         itemsEmail();
     }, [user?.email]);
