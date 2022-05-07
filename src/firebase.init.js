@@ -7,18 +7,13 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    // apiKey: process.env.REACT_APP_apiKey,
-    // authDomain: process.env.REACT_APP_authDomain,
-    // projectId: process.env.REACT_APP_projectId,
-    // storageBucket: process.env.REACT_APP_storageBucket,
-    // messagingSenderId: process.env.REACT_APP_messagingSenderId,
-    // appId: process.env.REACT_APP_appId,
-    apiKey: "AIzaSyBZE8_kwoE4REqeNJYSQHRdL_WSvcRMbZ4",
-    authDomain: "covid-vaccine-d02e5.firebaseapp.com",
-    projectId: "covid-vaccine-d02e5",
-    storageBucket: "covid-vaccine-d02e5.appspot.com",
-    messagingSenderId: "686589810541",
-    appId: "1:686589810541:web:44dc85be24bfab4804ec64"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
+
 };
 
 // Initialize Firebase

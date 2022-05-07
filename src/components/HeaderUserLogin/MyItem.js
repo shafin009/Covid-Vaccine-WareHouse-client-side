@@ -15,7 +15,7 @@ const MyItem = () => {
         const itemsEmail = async () => {
             const email = user?.email;
             console.log(email)
-            const url = `http://localhost:5000/myitem?email=${email}`;
+            const url = `https://desolate-basin-05597.herokuapp.com/myitem?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -41,7 +41,7 @@ const MyItem = () => {
 
         if (proceed) {
 
-            const url = `http://localhost:5000/item/${id}`
+            const url = `https://desolate-basin-05597.herokuapp.com/item/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

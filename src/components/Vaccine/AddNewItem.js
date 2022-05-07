@@ -16,7 +16,7 @@ const AddNewItem = () => {
 
         //post to backend
 
-        fetch("http://localhost:5000/item", {
+        fetch("https://desolate-basin-05597.herokuapp.com/item", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -40,9 +40,11 @@ const AddNewItem = () => {
                 <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
 
 
+                    <input className='mb-3' value={user?.displayName} {...register("displayName", { required: true })} readOnly />
                     <input className='mb-3' value={user?.email} {...register("email", { required: true })} readOnly />
                     <input className='mb-3' placeholder='Item Name' {...register("name", { required: true, maxLength: 20 })} />
                     <input className='mb-3' placeholder='Description' {...register("description")} />
+                    <input className='mb-3' placeholder='Price' {...register("price")} />
                     <input className='mb-3' placeholder='Quantity' type="number"
                         min="0" {...register("quantity")} />
                     <input className='mb-3' placeholder='Image URL' type="text" {...register("image")} />

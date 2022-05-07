@@ -8,7 +8,7 @@ const useVaccineid = (_id) => {
     useEffect(() => {
 
 
-        fetch(`http://localhost:5000/item/${_id}`)
+        fetch(`https://desolate-basin-05597.herokuapp.com/item/${_id}`)
             .then(res => res.json())
             .then(data => setVaccine(data))
 

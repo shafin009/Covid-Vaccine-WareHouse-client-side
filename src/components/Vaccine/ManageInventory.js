@@ -13,7 +13,7 @@ const ManageInventory = () => {
 
         if (proceed) {
 
-            const url = `http://localhost:5000/item/${id}`
+            const url = `https://desolate-basin-05597.herokuapp.com/item/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -34,33 +34,37 @@ const ManageInventory = () => {
     return (
         <div>
             <br />
-            <section className="text-gray-700 bg-white body-font">
+            <section className="text-gray-600 body-font">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="flex flex-wrap -m-4">
+                        {vaccines.map(vaccine => <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <div className="block relative h-48 rounded overflow-hidden">
+                                <img alt="" className="object-cover object-center w-full h-full block" src={vaccine.image} />
+                            </div>
+                            <div className="mt-4">
+                                <h4 className="text-gray-700 text-xs tracking-widest title-font mb-1">{vaccine.supplier}</h4>
+                                <h2 className="text-gray-900 title-font text-lg font-medium">{vaccine.name}</h2>
+                                <p className="text-gray-500 text-xs tracking-widest title-font mb-1">{vaccine.description}</p>
+                                <h4 className="mt-1">Price: {vaccine.price}</h4>
+                                <h4 className="mt-1">Quantity: {vaccine.quantity}</h4>
 
-                <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center '>
-
-
-                    {vaccines.map(vaccine => <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
-                        <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={vaccine.image} alt="blog" />
-                        <div className="p-6">
-                            <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Name: {vaccine.name}</h2>
-                            <h1 className="title-font text-lg font-medium text-gray-600 mb-3">Supplier:{vaccine.supplier}</h1>
-                            <p className="leading-relaxed mb-3">Description: {vaccine.description}</p>
-                            <h3 className="title-font text-lg font-medium text-gray-600 mb-3">Price: {vaccine.price}</h3>
-                            <h3 className="title-font text-lg font-medium text-gray-600 mb-3">Quantity: {vaccine.quantity}</h3>
-
-
-                            <button onClick={() => deleteButton(vaccine._id)} class="flex mx-auto text-black bg-red-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Delete</button>
-
+                                <button onClick={() => deleteButton(vaccine._id)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
+                                    Delete
+                                </button>
+                            </div>
                         </div>
-                    </div>
 
-                    )}
+                        )}
+
+
+
+                    </div>
                 </div>
             </section>
             <br />
 
             <Link to='/addnewitem'>
-                <button className="flex mx-auto text-black bg-purple-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Add New Item</button>
+                <button className="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none rounded text-lg">Add New Item</button>
             </Link>
         </div >
     );

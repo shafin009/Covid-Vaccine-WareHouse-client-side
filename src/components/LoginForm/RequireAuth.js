@@ -9,6 +9,7 @@ import Loading from '../../Hooks/Loading';
 
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
+
     const location = useLocation();
     const [sendEmailVerification, sending] = useSendEmailVerification(auth);
     if (loading) {
@@ -17,6 +18,7 @@ const RequireAuth = ({ children }) => {
 
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
+
     }
 
     if (!user.mailVerify && user.providerData[0]?.providerId === 'password') {

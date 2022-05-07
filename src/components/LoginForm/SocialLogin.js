@@ -3,6 +3,7 @@ import { useSignInWithGoogle, useSignInWithGithub } from 'react-firebase-hooks/a
 import { useLocation, useNavigate } from 'react-router-dom'
 import auth from '../../firebase.init';
 import Loading from '../../Hooks/Loading';
+import './socialLogin.css'
 
 const SocialLogin = () => {
 
@@ -10,6 +11,7 @@ const SocialLogin = () => {
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
     const navigate = useNavigate();
     const location = useLocation();
+    
 
 
     let from = location.state?.from?.pathname || "/";
@@ -20,7 +22,7 @@ const SocialLogin = () => {
     }
 
     if (error || error1) {
-        customErrorMessage = <p className='text-danger text-center'>Error: {error?.message} {error1?.message}</p>
+        customErrorMessage = <p className='text-rose-400 text-center'>Error: {error?.message} {error1?.message}</p>
     }
 
     if (user || user1) {
@@ -29,22 +31,12 @@ const SocialLogin = () => {
 
     return (
         <div>
-            {customErrorMessage}
+            <div class="login-box">
+                <h1>Social Login</h1>
+                <button class="social-button" onClick={() => signInWithGoogle()} id="google-connect"> <span>Connect with Google</span></button>
+                <button class="social-button" onClick={() => signInWithGithub()} id="github-connect"> <span>Connect with Github</span></button>
 
-            <div >
-                <button
-                    onClick={() => signInWithGoogle()}
-                    className='btn btn-danger w-50 d-block mx-auto my-2'>
-
-                    <span className='px-2'>Google Sign In</span>
-                </button>
-                <button
-                    onClick={() => signInWithGithub()}
-                    className='btn btn-dark w-50 d-block mx-auto '>
-
-                    <span className='px-2'>Github Sign In</span>
-                </button>
-
+                {customErrorMessage}
             </div>
 
         </div >
