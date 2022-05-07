@@ -76,7 +76,7 @@ const Homepage = () => {
         </div>
       </section>
       <br />
-      <h1 className='text-center text-2xl font-serif underline text-stone-700'>My WearHouse Items</h1>
+      <h1 className='text-center text-2xl font-serif underline text-stone-700'>My WareHouse Items</h1>
       <br />
       <section className="text-gray-700 bg-white body-font">
 
