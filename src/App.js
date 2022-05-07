@@ -13,6 +13,7 @@ import Inventory from './components/Vaccine/Inventory';
 import ManageInventory from './components/Vaccine/ManageInventory'
 import AddNewItem from './components/Vaccine/AddNewItem';
 import MyItem from './components/HeaderUserLogin/MyItem';
+import RequireAuth from './components/LoginForm/RequireAuth';
 
 
 
@@ -29,7 +30,10 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/inventory' element={<Vaccine />} />
         <Route path='/manageinventory' element={<ManageInventory></ManageInventory>} />
-        <Route path='/inventory/:id' element={<Inventory />} />
+        <Route path='/inventory/:id' element={
+          <RequireAuth>
+            <Inventory />
+          </RequireAuth>} />
         <Route path='/myitem' element={<MyItem />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/addnewitem' element={<AddNewItem />} />
