@@ -14,9 +14,9 @@ In this Project I used---
 <br/>
 ⚫Installed React-Router-Dom.
 ⚫Installed Firebase.
-⚫installed Firebase Hook.
+⚫Installed Json Web Token.
 ⚫Installed Tailwind & Bootstrap Framework.
-⚫Used MongoDB & Node.js for DataBase.
+⚫Used MongoDB & Node.js for Server side DataBase.
 
 
 
